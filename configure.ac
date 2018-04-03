@@ -18,6 +18,8 @@ AM_MAINTAINER_MODE([disable])
 SPHDE_SO_VERSION=1:4:0
 AC_SUBST(SPHDE_SO_VERSION)
 
+CXXFLAGS="$CXXFLAGS -std=gnu++11"
+
 # Debug option
 AC_ARG_ENABLE([debug],
   [AS_HELP_STRING([--enable-debug],
